@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于此博客 | 红白机时空舱</title>
+<link rel="shortcut icon" href="https://wolffy1998.github.io/Gridea//favicon.ico?v=1761821273931">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://wolffy1998.github.io/Gridea//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于此博客 | 红白机时空舱 - Atom Feed" href="https://wolffy1998.github.io/Gridea//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="博客会系统性写一些模拟器相关的教程。
+所有发布文章内的资源可前往公众号“红白机时空舱”的聊天窗口中发送“super”获取文档链接。文档内已创建标签将资源分类，方便快速定位资源。
+
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wolffy1998.github.io/Gridea/">
+  <img class="avatar" src="https://wolffy1998.github.io/Gridea//images/avatar.png?v=1761821273931" alt="">
+  </a>
+  <h1 class="site-title">
+    红白机时空舱
+  </h1>
+  <p class="site-description">
+    模拟器游戏教程！
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://wolffy1998.github.io/Gridea/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://wolffy1998.github.io/Gridea/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="https://wolffy1998.github.io/Gridea/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://wolffy1998.github.io/Gridea/post/guan-yu-ci-bo-ke" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于此博客
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-10-15
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>博客会系统性写一些模拟器相关的教程。</p>
+<p>所有发布文章内的资源可前往公众号“红白机时空舱”的聊天窗口中发送“super”获取文档链接。文档内已创建标签将资源分类，方便快速定位资源。</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/wolffy1998/PicGo//ZIYUAN.png" alt="image-20251015182558652" loading="lazy"></figure>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wolffy1998.github.io/Gridea/post/mame-jie-ji-mo-ni-qi-xia-zai-an-zhuang-jiao-cheng/">
+              <h3 class="post-title">
+                MAME街机模拟器下载安装教程
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by&nbsp; &nbsp;  <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://wolffy1998.github.io/Gridea//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
